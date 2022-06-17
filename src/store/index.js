@@ -1,16 +1,10 @@
 import { createStore } from 'vuex';
-import userModule from './modules/user/index';
+import advicesModule from '../modules/advices/store/index.js';
+import LoginModule from '../modules/login/store/index.js';
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
-    user: userModule
+    advices: advicesModule,
+    login: LoginModule
   }
 })

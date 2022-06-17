@@ -1,7 +1,7 @@
-import ButtonGo from "./ButtonGo.vue";
-import InputField from "./InputField.vue";
+import ButtonGo from "./ButtonGo";
+// import InputField from "./InputField.vue";
 
-export default [
-    ButtonGo,
-    InputField,
-];
+export default {
+    ButtonGo
+    // InputField,
+};
