@@ -29,5 +29,20 @@
     "sass-loader": "^13.0.0",
     "unplugin-auto-import": "^0.8.7",
     "unplugin-vue-components": "^0.19.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
   }
+
 }

@@ -7,3 +7,5 @@ import ElementPlus from 'element-plus';
 
 
 createApp(App).use(store).use(router).use(ElementPlus).mount('#app')
+
+console.log(process.env);
