@@ -1,10 +1,10 @@
 <template>
-    advicesModule
+    Example
 </template>
 
 <script>
 export default {
-    name: 'AdviceModule',
+    name: 'ExampleModule',
     components: {},
     data() {
 

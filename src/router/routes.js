@@ -1,11 +1,10 @@
-import HomeView from '../views/HomeView.vue';
-import LoginView from '../views/LoginView.vue';
-import AdvicesView from '../views/AdvicesView.vue';
+import MainView from '../views/MainView.vue';
+import ExampleModule from '../views/ExampleView.vue';
 
 export default [{
         path: '/',
-        name: 'home',
-        component: HomeView
+        name: 'main',
+        component: MainView
     },
     {
         path: '/about',
@@ -16,14 +15,8 @@ export default [{
         component: () => import( /* webpackChunkName: "about" */ '../views/AboutView.vue')
     },
     {
-        path: '/login',
-        name: 'login',
-        component: LoginView
-    },
-    
-    {
-        path: '/advices',
-        name: 'advices',
-        component: AdvicesView
+        path: '/example',
+        name: 'example',
+        component: ExampleModule
     },
 ]

@@ -1,10 +1,10 @@
 <template>
-    login
+    user
 </template>
 
 <script>
 export default {
-    name: 'LoginModule',
+    name: 'UsersModule',
     components: {},
     data() {
 

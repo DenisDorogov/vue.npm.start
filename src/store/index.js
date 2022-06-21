@@ -1,10 +1,10 @@
 import { createStore } from 'vuex';
-import advicesModule from '../modules/advices/store/index.js';
-import LoginModule from '../modules/login/store/index.js';
+import MainModule from '../modules/main/store/index.js';
+import ExampleModule from '../modules/example/store/index.js';
 
 export default createStore({
   modules: {
-    advices: advicesModule,
-    login: LoginModule
+    main: MainModule,
+    example: ExampleModule
   }
 })
