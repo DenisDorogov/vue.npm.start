@@ -1,11 +1,9 @@
-import MainView from '../views/MainView.vue';
-import ExampleModule from '../views/ExampleView.vue';
+import mainModuleRoutes from "../modules/main/routes.js";
+import profileModuleRoutes from "../modules/profile/routes.js";
+import exampleModuleRoutes from "../modules/example/routes.js";
 
-export default [{
-        path: '/',
-        name: 'main',
-        component: MainView
-    },
+
+export default [
     {
         path: '/about',
         name: 'about',
@@ -14,9 +12,7 @@ export default [{
         // which is lazy-loaded when the route is visited.
         component: () => import( /* webpackChunkName: "about" */ '../views/AboutView.vue')
     },
-    {
-        path: '/example',
-        name: 'example',
-        component: ExampleModule
-    },
+    ...mainModuleRoutes,
+    ...profileModuleRoutes,
+    ...exampleModuleRoutes,
 ]

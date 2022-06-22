@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <MainModule msg="Welcome to Your Vue.js App"/>
+    <router-view/>
   </div>
 </template>
 

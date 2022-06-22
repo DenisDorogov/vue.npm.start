@@ -1,6 +1,7 @@
 
 <template>
     <ExampleModule />
+    <router-view/>
 </template>
 
 <script>
