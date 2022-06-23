@@ -31,7 +31,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 console.log(process.env.APP_ENV);
 
 export default {

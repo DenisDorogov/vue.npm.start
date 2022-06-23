@@ -2,7 +2,7 @@ import ExampleView from "../../views/ExampleView.vue"
 
 export default [
     {
-        path: '/example',
+        path: '/example/:number',
         name: 'example',
         component: ExampleView
     },

@@ -2,24 +2,35 @@
     user
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from "vue";
+import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
+
+export default defineComponent({
     name: 'UsersModule',
     components: {},
+    props: {
+        theme: String,
+        msg: { type: String, required: true }
+    },
     data() {
-
+        return {
+            userId: null,
+            userName: '',
+            userRole: 'default'
+        }
     },
     computed: {
 
     },
-    created() {
+    // created() {
 
-    },
-    mounted() {
+    // },
+    // mounted() {
         
-    },
+    // },
 
-}
+})
 
 </script>
 
