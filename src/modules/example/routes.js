@@ -4,6 +4,9 @@ export default [
     {
         path: '/example/:number',
         name: 'example',
-        component: ExampleView
+        component: ExampleView,
+        // beforeEnter: (to, from, next) => {
+        //     if (!store.state.userIsLogged) next({ path: '/', replace: true })
+        //     else next()
     },
 ]

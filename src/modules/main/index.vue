@@ -32,7 +32,6 @@
 </template>
 
 <script lang="ts">
-console.log(process.env.APP_ENV);
 
 export default {
   name: 'MainModule',
